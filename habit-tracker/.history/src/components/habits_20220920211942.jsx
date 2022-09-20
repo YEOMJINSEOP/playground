@@ -11,7 +11,7 @@ class Habits extends Component {
   };
 
   handleIncrement = (habit) => {
-    console.log(`handleIncrement ${habit.name}`);
+    console.log(`handleIncrement ${habit.name}`)
     const habits = [...this.state.habits];
     const index = habits.indexOf(habit);
     habits[index].count++;
@@ -20,18 +20,11 @@ class Habits extends Component {
   }
 
   handleDecrement = (habit) => {
-    console.log(`handleDecrement ${habit.name}`);
-    const habits = [...this.state.habits];
-    const index = habits.indexOf(habit);
-    const count = habits[index].count - 1;
-    habits[index].count = count < 0 ? 0: count;
-    this.setState({habits: habits});
+    console.log(`handleDecrement ${habit.name}`)
   }
 
   handleDelete = (habit) => {
-    console.log(`handleDelete ${habit.name}`);
-    const habits = this.state.habits.filter(item => item.id != habit.id);
-    this.setState({habits});
+    console.log(`handleDelete ${habit.name}`)
   }
 
   render() {

@@ -16,22 +16,19 @@ class Habit extends Component {
     this.setState({count: count < 0? 0 : count});
   }
   render() {
-    console.log(this.props);
+    console.log(this.props.habit);
     const {name, count} = this.props.habit;
     return (
+      console.log(this.props),
       <li className="habit">
         <span className="habit-name">{name}</span>
-
         <span className="habit-count">{count}</span>
-
         <button className="habit-button habit-increase" onClick={this.handleIncrement}>
           <i className="fa-solid fa-square-plus"></i>
         </button>
-
         <button className="habit-button habit-decrease" onClick={this.handleDecrement}>
           <i className="fa-solid fa-square-minus"></i>
         </button>
-
         <button className="habit-button habit-delete">
           <i className="fa-solid fa-trash"></i>
         </button>

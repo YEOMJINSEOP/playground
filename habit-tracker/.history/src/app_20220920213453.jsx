@@ -1,0 +1,38 @@
+import React, { Component } from 'react';
+import './app.css';
+import Habits from './components/habits';
+
+class App extends Component {
+  handleIncrement = (habit) => {
+    console.log(`handleIncrement ${habit.name}`);
+    const habits = [...this.state.habits];
+    const index = habits.indexOf(habit);
+    habits[index].count++;
+    this.setState({ habits: habits});
+    //첫 번째 habits는 key이고, 두 번째 habits는 지역 변수로 선언한 배열 haibts
+  }
+  
+  handleDecrement = (habit) => {
+    console.log(`handleDecrement ${habit.name}`);
+    const habits = [...this.state.habits];
+    const index = habits.indexOf(habit);
+    const count = habits[index].count - 1;
+    habits[index].count = count < 0 ? 0: count;
+    this.setState({habits: habits});
+  }
+  
+  handleDelete = (habit) => {
+    console.log(`handleDelete ${habit.name}`);
+    const habits = this.state.habits.filter(item => item.id != habit.id);
+    this.setState({habits});
+  }
+
+  render() {
+    return <Habits 
+    habits = {this.state.habits};
+    />;
+  }
+}
+
+
+export default App;

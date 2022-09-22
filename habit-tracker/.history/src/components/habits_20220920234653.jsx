@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Habit from './habit';
 import HabitAddForm from './habitAddForm';
 class Habits extends Component {
-
+s
   handleAdd = name => {
     this.props.onAdd(name);
   }
@@ -12,7 +12,6 @@ class Habits extends Component {
     return (
       <>
         <HabitAddForm onAdd={this.handleAdd}  />
-
         <div className="habits">
           <ul>
             {
@@ -23,7 +22,7 @@ class Habits extends Component {
                   onIncrement={this.props.onIncrement}
                   onDecrement={this.props.onDecrement}
                   onDelete={this.props.onDelete}
-                  onAdd={this.props.onAdd}
+                  onAdd={this.handleAdd}
                  ></Habit>
               ))
             }

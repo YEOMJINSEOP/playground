@@ -21,6 +21,8 @@ class Habits extends Component {
                 <Habit 
                   key={habit.id} 
                   habit={habit}
+                  name={habit.count}
+                  count={habit.count}
                   onIncrement={this.props.onIncrement}
                   onDecrement={this.props.onDecrement}
                   onDelete={this.props.onDelete}

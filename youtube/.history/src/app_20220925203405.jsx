@@ -18,7 +18,7 @@ function App({youtube}) {
   useEffect(() => {
     youtube
       .mostPopular() //
-      .then(videos => setVideos(videos));
+      .then(console.log);
   }, []);
   return (
     <div className="app">

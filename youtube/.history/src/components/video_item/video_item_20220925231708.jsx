@@ -16,6 +16,6 @@ const VideoItem = memo(({video, video: {snippet}, onVideoClick, display}) => {
           </div>
         </div>
       </li>
-  )}
+  )};
 )
 export default VideoItem;

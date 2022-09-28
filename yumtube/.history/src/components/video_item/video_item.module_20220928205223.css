@@ -1,6 +1,8 @@
 .container{
   width: 50%;
-  padding: 0.2em;
+  margin-bottom: 0.2em;
+  cursor: pointer;
+  transition: transform 250ms ease-in;
 }
 
 .video{
@@ -9,7 +11,6 @@
   border: 1px solid lightgray;
   cursor: pointer;
   transition: transform 250ms ease-in;
-  box-shadow: 4px 0px 11px -5px rgba(0,0,0,0.95);
 }
 
 .video:hover{
@@ -18,18 +19,12 @@
 
 .thumbnail{
   width: 40%;
-  height: 100%;
-}
-
-.metadata{
-  margin-left: 0.2em;
 }
 
 .title, .channel {
   margin: 0;
-  font-size: 0.8em;
 }
 
-.channel {
-  font-size: 0.6rem;
+.chaneel {
+  font-size: 0.9rem;
 }

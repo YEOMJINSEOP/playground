@@ -12,12 +12,9 @@ function App() {
       redirect: 'follow'
     };
     
-    fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${query}&type=video&key=AIzaSyBbOFJZ0wPaBnrt1n8uKB0kNdtN1EZ1KJ4`,
-    requestOptions)
-      .then(response => response.json())
-      .then(result => 
-        result.items.map(item => ({...item, id: item.id.videoId})))
-      .then(items=> setVideos(items))
+    fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=bts&type=video&key=AIzaSyBbOFJZ0wPaBnrt1n8uKB0kNdtN1EZ1KJ4", requestOptions)
+      .then(response => response.text())
+      .then(result => console.log(result))
       .catch(error => console.log('error', error));
   }
   useEffect(() => {
@@ -36,7 +33,7 @@ function App() {
   }, []);
   return(
     <div className={styles.app}>
-      <SearchHeader onSearch={search}/>
+      <SearchHeader/>
       <VideoList videos={videos} />
     </div>
   )

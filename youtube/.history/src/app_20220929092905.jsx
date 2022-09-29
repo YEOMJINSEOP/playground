@@ -15,12 +15,7 @@ function App({youtube}) {
     setSelectedVideo(video);
   }
 
-
-// 의존성이 변경되는 경우, 이전에 기억하고 있던 함수 자체와 비교해서 다른 경우에만 리랜더
-// 원하는 타이밍에 호출시킬 함수를 만들기 위해 사용(함수가 반환됨)
-// useEffect vs useCallback
-// useEffect는 어떤 값의 변화가 동작을 자동으로 불러오도록 하고 싶을때,
-// useCallback은 어떤 값이 변했을때 특정 동작을 값에 따라 다르게 실행시키고 싶거나 원하는 타이밍에 어떤 동작을 실행시키고 싶을때 적합하다.
+  // 의존성이 변경되는 경우, 이전에 기억하고 있던 함수 자체와 비교해서 다른 경우에만 리랜더
   const search = useCallback(
     query => {
       youtube
@@ -30,9 +25,8 @@ function App({youtube}) {
           setSelectedVideo(null)
         });
     } , [youtube]);
-  
+
   //useEffect -> component나 prop이 mount되었거나 update 될 때마다 호출.
-  //뭔가가 바뀌면 어떤 동작을 자동으로 실행하기 위해 사용
   //두번째 인자에 전달하는 데이터만 update될 때마다 호출되게 설정할 수 있다.
   //두번째 인자에 []를 전달하면 한 번만 만들고, 그것을 재사용한다.
   useEffect(() => {

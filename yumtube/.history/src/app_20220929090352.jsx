@@ -13,7 +13,6 @@ function App({youtube}) {
     setSelectedVideo(video);
   }
   const search = (query) => {
-    setSelectedVideo(null);
     youtube.search(query) //
     .then(videos => setVideos(videos));
 
@@ -35,7 +34,7 @@ function App({youtube}) {
           )
       }
         <div className={styles.list}>
-          <VideoList videos={videos} onVideoClick={selectVideo} display={selectedVideo ? 'list' : 'grid'} />
+          <VideoList videos={videos} onVideoClick={selectVideo} />
         </div>
       </section>
     </div>

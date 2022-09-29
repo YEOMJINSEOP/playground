@@ -6,10 +6,10 @@
   display: flex;
 }
 
-.detail{
+.detatil{
   flex: 1 1 70%;
 }
 
 .list{
-  flex: 1 1 30%;
+
 }

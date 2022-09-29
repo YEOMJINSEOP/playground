@@ -11,7 +11,7 @@ const VideoDetail = (props) => (
           height="500px"
           src={`https://www.youtube.com/embed/${props.video.id}`}
           frameBorder="0" 
-          allowFullScreen>
+          allowfullscreen>
           </iframe>
           <h2>{props.video.snippet.title}</h2>
           <h3>{props.video.snippet.channelTitle}</h3>

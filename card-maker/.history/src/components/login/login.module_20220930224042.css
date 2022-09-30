@@ -1,0 +1,18 @@
+@value makerGreen from '../../common/colors.css';
+
+.login{
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  width: 50%;
+  border: 0.15em solid makerGreen;
+  border-radius: 5%;
+}

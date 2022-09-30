@@ -1,0 +1,12 @@
+.login{
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  width: 8em;
+}

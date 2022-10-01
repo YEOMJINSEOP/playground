@@ -13,7 +13,7 @@ class AuthService{
 
   //사용자가 로그인 했는지, 로그아웃 했는지 상태를 볼 수 있는 함수
   onAuthChange(onUserChanged){
-    /**user는 사용자 정보가 바뀔 때마다 전달받는 정보를 전달받은 함수(onUserChanged에 전달*/
+    //user는 사용자 정보가 바뀔 때마다 전달받는 정보
     firebase.auth().onAuthStateChanged(user => {
       onUserChanged(user);
     })

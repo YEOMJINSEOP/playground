@@ -9,11 +9,12 @@ const Login = ({authService}) => {
   
   const navigate = useNavigate();
 
-  //Login 되면 Maker로 이동
+  //Login이 되면 Maker 화면으로 갈 수 있도록 하는 함수
   const goToMaker = (userId) => {
     navigate({
       pathname: '/maker',
-      state: {id: userId},
+      state: {id: userId}, //Maker에 전달할 정보
+      
     });
   }
 
@@ -26,17 +27,9 @@ const Login = ({authService}) => {
 
   useEffect(() => {
     authService
-    .onAuthChange((user) => {
+    .onAuthChange(user => {
       user && goToMaker(user.uid);
     })
-    
-    // (user) => {
-    //   user && goToMaker(user.uid);
-    // }
-    // 위 부분이 onUserChanged에 해당하는 콜백 함수. 
-    // 따라서 authService.onAuthChange에서 return된 user를 onUserChanged(user)
-    //  처럼 전달해서 실행한다.
-    //Maker에 user.uid 전달
   });
 
 

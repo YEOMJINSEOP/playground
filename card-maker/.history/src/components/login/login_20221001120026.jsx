@@ -1,5 +1,4 @@
 import React from 'react';
-import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Footer from '../footer/footer';
 import Header from '../header/header';
@@ -21,13 +20,6 @@ const Login = ({authService}) => {
     // .then(console.log)
     .then(data => goToMaker(data.user.uid));
   };
-
-  useEffect(() => {
-    authService
-    .onAuthChange(user => {
-      user && goToMaker(user.uid);
-    })
-  });
 
 
   return(

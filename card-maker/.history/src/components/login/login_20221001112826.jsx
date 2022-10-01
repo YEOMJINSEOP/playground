@@ -1,5 +1,4 @@
 import React from 'react';
-import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Footer from '../footer/footer';
 import Header from '../header/header';
@@ -8,28 +7,15 @@ import styles from './login.module.css';
 const Login = ({authService}) => {
   
   const navigate = useNavigate();
-  const goToMaker = (userId) => {
-    navigate({
-      pathname: '/maker',
-      state: {id: userId},
-    });
+  const goToMaker = () => {
+    navigate('/maker');
   }
 
   const onLogin = event => {
     authService//
     .login(event.currentTarget.textContent)
-    // .then(console.log)
-    .then(data => goToMaker(data.user.uid));
+    .then(console.log)
   };
-
-  useEffect(() => {
-    authService
-    .onAuthChange(user => {
-      user && goToMaker(user.uid);
-    })
-  });
-
-
   return(
     <section>
       <Header/>

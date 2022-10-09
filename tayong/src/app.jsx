@@ -13,9 +13,6 @@ function App() {
         <img className={styles.logoImage} src="/images/handshake.png" alt="tayong image" />
         <button className={styles.button}>같이 이동할 사람 구하기</button>
       </div>
-      <div className={styles.container2}>
-        <h1>hello!</h1>
-      </div>
     </>    
   )
 }

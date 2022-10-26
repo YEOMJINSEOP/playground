@@ -1,5 +1,9 @@
 @import '../../App.module.css';
 
+*{
+  margin: 0;
+}
+
 button{
   width: 4rem;
   font-size: 0.7rem;

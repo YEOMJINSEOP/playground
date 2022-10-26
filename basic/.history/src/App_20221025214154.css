@@ -1,0 +1,16 @@
+.orange {
+  color: orange;
+}
+
+.profile{
+  width: 300px;
+  text-align: center;
+  background-color: green;
+}
+
+.photo{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+

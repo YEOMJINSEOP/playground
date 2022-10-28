@@ -21,6 +21,6 @@ p{
   padding-left: 1rem;
 }
 
-.contract:hover{
-  cursor: pointer;
+.address{
+  margin-right: 3rem;
 }

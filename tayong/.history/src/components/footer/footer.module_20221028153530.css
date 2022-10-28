@@ -11,7 +11,7 @@
   color: var(--color-white);
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: var(--font-micro)
@@ -21,6 +21,6 @@ p{
   padding-left: 1rem;
 }
 
-.contract:hover{
-  cursor: pointer;
+.address{
+  margin-right: 3rem;
 }

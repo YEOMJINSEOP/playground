@@ -22,7 +22,6 @@ function LocationSelector(props) {
           <label htmlFor='departure'></label>
           <div className={styles.inputBox}>
             <input
-                className={styles.input}
                 type="text"
                 id='departure'
                 name='departure'
@@ -44,7 +43,6 @@ function LocationSelector(props) {
             <label htmlFor='arrival'></label>
             <div className={styles.inputBox}>
             <input
-                className={styles.input}
                 type="text"
                 id='arrival'
                 name='arrival'

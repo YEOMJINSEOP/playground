@@ -23,28 +23,14 @@
   margin: 0 3rem;
 }
 
-input{
-  border: none;
-  outline: none;
-}
-
-.input{
+.locationSelectorInput{
   width: 11rem;
   height: 3rem;
   padding: 0 0.5rem;
-  background-color: var(--color-white);
-  box-shadow: 0 0 4 rgba(0, 0, 0, 0.25);
-  border-radius: 1rem;
+  border: var(--border-weight) solid var(--color-light-grey) ;
+  border-radius: 0.7rem;
   color: var(--color-black);
   font-size: var(--font-small);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.searchIcon{
-  color: var(--color-orange);
 }
 
 .info{

@@ -12,7 +12,7 @@ button{
   position: fixed;
   
   background-color: var(--color-white);
-  border-bottom: var(--border-weight) solid var(--color-light-grey);
+  
   display: flex;
   justify-content: space-between;
 }

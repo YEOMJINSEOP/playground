@@ -41,20 +41,17 @@ function LocationSelector(props) {
         <div className={styles.arrival}>
             <div className={styles.info}><span>"도착지"</span>를 입력해 주세요</div>
             <label htmlFor='arrival'></label>
-            <div className={styles.input}>
-            <input
-                type="text"
-                id='arrival'
-                name='arrival'
-                value = {arrival}
-                onChange = {
-                  (e) => {
-                    setArrival(e.target.value);
-                  }
-                }
-            />
-            <FontAwesomeIcon className={styles.searchIcon} icon="fa-solid fa-magnifying-glass" />
-          </div>
+            <input 
+            className={styles.locationSelectorInput}
+            id='arrival'
+            name='arrival'
+            value={arrival}
+            type="text"
+            onChange={
+              (e) => {
+                setArrival(e.target.value);
+              }
+            } />
         </div>
       </div>
         <button className={styles.submitBtn}>같이 이동할 사람 찾기</button>

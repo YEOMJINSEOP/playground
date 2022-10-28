@@ -49,7 +49,7 @@ function LocationSelector(props) {
                 value = {arrival}
                 onChange = {
                   (e) => {
-                    setArrival(e.target.value);
+                    setDeparture(e.target.value);
                   }
                 }
             />

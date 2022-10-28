@@ -44,12 +44,12 @@ function LocationSelector(props) {
             <div className={styles.input}>
             <input
                 type="text"
-                id='arrival'
-                name='arrival'
-                value = {arrival}
+                id='departure'
+                name='departure'
+                value = {departure}
                 onChange = {
                   (e) => {
-                    setArrival(e.target.value);
+                    setDeparture(e.target.value);
                   }
                 }
             />

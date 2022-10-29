@@ -6,7 +6,6 @@ import { FaArrowRight } from 'react-icons/fa';
 import Departure from '../departure/departure';
 import Arrival from '../arrival/arrival';
 
-library.add(faArrowRight,faMagnifyingGlass);
 
 function LocationSelector(props) {
   const [departure, setDeparture] = useState('');
@@ -14,7 +13,7 @@ function LocationSelector(props) {
 
   const handleSetDeparture = (departure) => {
     setDeparture(departure);
-  }
+  };
 
   const handleSetArrival = (arrival) => {
     setArrival(arrival);
@@ -30,6 +29,7 @@ function LocationSelector(props) {
       <button className={styles.submitBtn}>같이 이동할 사람 찾기</button>
     </div>
   );
+  
 }
 
 export default LocationSelector;

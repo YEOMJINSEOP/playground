@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './locationSelector.module.css';
 
-import { FaArrowRight } from 'react-icons/fa';
+import { AiOutlineArrowRight } from 'react-icons/fa';
 
 import Departure from '../departure/departure';
 import Arrival from '../arrival/arrival';
@@ -24,7 +24,7 @@ function LocationSelector(props) {
     <div className={styles.locationSelector}>
       <div className={styles.location}>
         <Departure departure={departure} onSet={handleSetDeparture} />
-        <FaArrowRight className={styles.arrow}/>
+        <AiOutlineArrowRight className={styles.arrow}/>
         <Arrival arrival = {arrival} onSet={handleSetArrival}/>
       </div>
       <button className={styles.submitBtn}>같이 이동할 사람 찾기</button>

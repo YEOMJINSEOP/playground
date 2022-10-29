@@ -1,18 +1,19 @@
+import logo from './logo.svg';
 import './App.css';
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
-import Homepage from './pages/HomePage';
-import List from './pages/List';
+import Home from './components/home';
+import Profile from './components/profile';
 
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Homepage/>,
+    path: "/home",
+    element: <Home/>,
     errorElement: <p>Not Found 🐶</p>
   },
   {
     path: '/profile',
-    element: <List/>
+    element: <Profile/>
   },
 
 ]);

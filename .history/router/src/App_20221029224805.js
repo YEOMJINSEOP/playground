@@ -1,5 +1,8 @@
+import logo from './logo.svg';
 import './App.css';
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
+import Home from './components/home';
+import Profile from './components/profile';
 import Homepage from './pages/HomePage';
 import List from './pages/List';
 

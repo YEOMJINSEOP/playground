@@ -1,0 +1,15 @@
+
+input{
+  width: 500px;
+  height: 50px;
+  position: relative;
+  top: 20%;
+  left: 30%;
+  border: 5px solid darkgreen;
+}
+
+select {
+  position: relative;
+  top: 0;
+
+}

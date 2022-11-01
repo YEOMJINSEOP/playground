@@ -59,10 +59,10 @@
   top: 45px;
 }
 
-/* .listContainer{
-  position: re;
-  /* top:
-} */
+.listContainer{
+  position: absolute;
+  /* top: */
+}
 
 .list{
   overflow-y:scroll;

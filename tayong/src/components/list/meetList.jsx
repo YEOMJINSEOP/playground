@@ -48,6 +48,7 @@ function MeetList(props) {
           />    
         </div>    
       </div>
+<<<<<<< HEAD
       <div className={styles.listContainer}>
         <ul className={styles.list}>
           {meetList.map((item) => {
@@ -70,6 +71,27 @@ function MeetList(props) {
           })}
         </ul>
       </div>
+=======
+      <ul className={styles.list}>
+        {meetList.map((item) => {
+          if(item.departure == param['*']){
+            return (
+              <li className={styles.meet} key={item.id}>
+                <div className={styles.infoImage}></div>
+                <div className={styles.infoLocation}>
+                  <p className={styles.infoDeparture}><span>출발</span>{item.departure}</p> 
+                  <FaArrowRight className={styles.arrow}/>
+                  <p><span>도착</span>{item.arrival}</p>
+                </div>
+                <div className={styles.infoSet}>
+                  <p className={styles.infoRecruitment}><span>모집인원</span>{item.recruitment}</p>
+                  <p className={styles.infoTime}><span>마감시간</span>{item.remainingTime}</p>
+                </div>
+              </li>
+              ) 
+          }
+        })}
+      </ul>
     </div>
   );
 }

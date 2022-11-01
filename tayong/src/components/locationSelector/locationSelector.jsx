@@ -32,7 +32,7 @@ function LocationSelector(props) {
       </div>
       <button 
         className={styles.submitBtn}
-        onClick={() => {navigate(`/list/${departure}/${arrival}`);}}
+        onClick={() => {navigate(`/list/${departure}`);}}
           >같이 이동할 사람 찾기
       </button>
     </div>

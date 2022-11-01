@@ -1,0 +1,12 @@
+.listContainer{
+  width: 100%;
+  height: 50vh;
+  background-color: lightblue;
+
+  
+}
+
+ul{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}

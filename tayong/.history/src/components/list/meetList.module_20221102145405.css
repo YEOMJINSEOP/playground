@@ -171,7 +171,7 @@
     display: grid;
     grid-template-columns: repeat(4, auto);
   
-    column-gap: 1px;
+    column-gap: 20px;
     row-gap:  20px;
   }
 
@@ -183,7 +183,7 @@
 
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1237px){
   
   .list{
     display: grid;

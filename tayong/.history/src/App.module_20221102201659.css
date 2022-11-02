@@ -15,21 +15,9 @@
   --font-micro: 10px;
 
   /* font weight */
-  --weight-pretendard-thin:  100;
-  --weight-pretendard-extraLight:  200;
-  --weight-pretendard-light: 300;
-  --weight-pretendard-regular: 400;
-  --weight-pretendard-medium:  500;
-  --weight-pretendard-semiBold:  600;
-  --weight-pretendard-bold:  700;
-  --weight-pretendard-extraBold: 800;
-  --weight-pretendard-black: 900;
-
-  --weight-leferi-point-white: 200;
-  --weight-leferi-point-black: 700;
-
-  --weight-leferi-base-regular: 400;
-  --weight-leferi-base-bold: 700;
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
 
  /* border weight */
  --border-weight: 1.5px;
@@ -52,6 +40,13 @@
 }
 
 @font-face {
+  font-family: 'LeferiPoint-WhiteObliqueA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'LeferiPoint-BlackA';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackA.woff') format('woff');
   font-weight: normal;
@@ -62,6 +57,13 @@
   font-family: 'LeferiBaseType-RegularA';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-RegularA.woff') format('woff');
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LeferiBaseType-RegularA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-RegularA.woff') format('woff');
+  font-weight: bold;
   font-style: normal;
 }
 

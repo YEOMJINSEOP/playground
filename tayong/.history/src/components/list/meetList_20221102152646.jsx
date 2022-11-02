@@ -51,7 +51,7 @@ function MeetList(props) {
       </div>
       <ul className={styles.list}>
         {meetList.map((item) => {
-          if(item.departure === depLoc && item.arrival === arrLoc){
+          if(item.departure == depLoc && item.arrival == arrLoc){
             return (
               <Meet
                 id={item.id}
